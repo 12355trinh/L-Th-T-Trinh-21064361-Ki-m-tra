@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="Bài 1.css">  
+</head>
+<body>
+      
+    <div class="container">
+      <h3><center>LAPTOP DÀNH CHO HỌC TRỰC TUYẾN</center></h3>
+      <h4>Do ảnh hưởng của đại dịch COVID trong năm học này, nhiều sinh viên ở một số tỉnh, thành phố như Hà Nội, TPHCM đã phải tiến hành học tập qua hình thức online trực tuyến 
+            dẫn đến nhu cầu học máy tính xách tay/laptop tăng cao so với các năm. Các mẫu loptop hỗ trợ tốt trong học tập có thể tham khảo.</h4>
+      
+      <div class="laptop-container">
+        <div class="laptop">
+            
+                <img src="c:\Users\Lenovo\Downloads\maytinh1.jpg" alt="Laptop 1">
+                <h4> LAPTOP DELL 18</h4>
+                <p>RAM: 16GB</p>
+                <p>Ổ cứng: 256GB SSD</p>
+                <p>Bảo hành: 12 tháng 1 đổi 1 </p>
+                <a href="#" class="read-more">Đọc tiếp</a>
+         </div>
+        <div class="laptop">
+          <img src="c:\Users\Lenovo\Downloads\maytinh2.jpg" alt="Laptop 2">
+          <h4> LAPTOP LENOVO</h4>
+          <p>RAM: 32GB</p>
+          <p>Ổ cứng: 512GB SSD</p>
+          <p>Bảo hành: 12 tháng 1 đổi 1 </p>
+          <a href="#" class="read-more">Đọc tiếp</a>
+        </div>
+        <div class="laptop">
+          <img src="c:\Users\Lenovo\Downloads\maytinh3.jpg" alt="Laptop 3">
+          <h4> LAPTOP HP</h4>
+          <p>RAM: 64GB</p>
+          <p>Ổ cứng: 1TB HDD</p>
+          <p>Bảo hành: 12 tháng 1 đổi 1 </p>
+          <a href="#" class="read-more">Đọc tiếp</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+
+    <section id="contact">
+        <h1>LIÊN HỆ</h1>
+        <div id="top-color-splash"></div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Thông tin</h2>
+                <div class="info">
+                    <i class="fa fa-map-marker"></i>
+                    <p>  
+                        <figure>
+                            <img src="c:\Users\Lenovo\Downloads\map.jpg" style =" width: 35px;"> KPL Trung. Tại Thủ Đại, Tp. HCM
+                           <p>
+                            <img src="c:\Users\Lenovo\Downloads\call ne.jpg" style = " width: 35px;">    (+84) 3454644435
+                           </p> 
+                           <p>
+                            <img src="c:\Users\Lenovo\Downloads\gmail.jpg" style =" width: 33px;">    infor@edu.vn
+                           </p>
+                        </figure>
+                </div>
+                <div class="info">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                
+            </div>
+            <div class="contact-form">
+                <h3>Hãy liên lạc với chúng tôi bất cứ khi nào!</h3>
+                <form action="#" onsubmit="return confirmFormSubmit();">
+                    <label for="fullname">Họ và tên:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email">
+                    <br>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                    <br>
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" placeholder=""></textarea>
+                    <br>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+    function confirmFormSubmit() {
+        var name = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var phoneNumber = document.getElementById("phone").value;
+        var feedback = document.getElementById("message").value;
+
+        var message = "Thông tin của bạn:\n\n" +
+            "Họ và tên: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Số điện thoại: " + phoneNumber + "\n" +
+            "Nội dung góp ý: " + feedback;
+
+        if (confirm(message)) {
+            // If user confirms, submit the form
+            return true;
+        } else {
+            // If user cancels, prevent form submission
+            return false;
+        }
+    }
+    </script>
+    </body>
+    </html>
